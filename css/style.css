@@ -1,0 +1,325 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*h1 {
+    color: #14e71f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}*/
+
+main h2{
+    color: #1dcde4;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*main section h2{
+    color: #800080;
+}*/
+
+/*FLEXBOX - display html*/
+
+/*SERVICIO*/
+/* HEADER de Index, Main y Footer */
+
+.barra{
+    background-color: #c5cb0e;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+.barra img{
+    width: 100px;
+    
+}
+
+.barra h1 {
+    color: #db7c10;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.barra nav{
+    width: 30%;
+}
+
+.barra nav ul{
+    display: flex;
+    justify-content: space-between; /*con estos dos no se mueve porque "ul" No tiene espacio*/
+}
+
+.barra nav ul li{
+    list-style: none;
+}
+
+.barra nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Main DE Servicio */
+
+.padre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.padre h2{
+    /*text-align: center;*/
+    /*margin-top: 40px;
+    margin-bottom: 40px;*/
+    color: #1dcde4;
+}
+
+.padre h3{
+    color: #f11515;
+}
+
+.contenedor-flex{
+    background-color: #eceaec;
+    display: flex;
+    max-width: 1000px;
+    flex-flow: wrap;
+}
+
+.card{
+    border: 3px solid #c5cb0e;
+    background-color: #ffffff;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card img{
+    width: 100px;
+}
+
+/* FOOTER de Index, Servicio y Contacto*/
+
+.pie{
+    background-color: #c5cb0e;
+    height: 100%;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    /*margin: 10px;*/
+    ;
+}
+
+.pie ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pie ul li{
+    list-style: none;
+}
+
+.pie ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.pie p{
+    color: #4515f3;
+    margin: 10px;/*
+    padding: 5px;*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.twitter{
+    color: #87ceeb;
+}
+
+.facebook{
+    background-color: #87ceeb;
+}
+
+.tiktok{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.instagram{
+    color: #ffa500;
+}
+
+.youtube{
+    background-color: #ff0000;
+}
+
+.papa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Main de INDEX*/
+
+.mama img{
+    width: 200px;
+}
+
+.mama video{
+    width: 15%;
+}
+
+.mama p{
+    color: #062a61;
+}
+
+
+/* Grid Container*/
+
+/* Servicio */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 3fr 1fr;
+    /*gap: 5px;*/
+    grid-template-areas: 
+            "cabeza     cabeza      cabeza"
+            "galeria    galeria     galeria"
+            "pie         pie        pie";
+}
+
+/*menu*/
+.barra{
+    grid-area: cabeza;
+}
+
+/*aside*/
+.publi{
+    grid-area: publi;
+}
+
+/*galeria*/
+.galeria{
+    grid-area: galeria;
+}
+
+.pie{
+    grid-area: pie;
+}
+
+/* Menú del ejemplo */
+
+.cabeza_span{
+    font-size: 0.7em;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.cabeza_menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3em;
+}
+
+.cabeza_menu--logo{
+    font-weight: 700;
+}
+
+.cabeza_menu ul{
+    display: flex;
+    width: 24rem;
+    justify-content: space-around;
+}
+
+.cabeza_menu ul li{
+    list-style: none;
+}
+
+.cabeza_menu ul li a{
+    text-decoration: none;
+}
+
+.cabeza-backing{
+    background-image: url("cardiologia.jpg");
+    background-position: center;
+    height: 18em;
+    background-size: cover;
+}
+
+/* Media quiries */
+/* Nota: solo vamos a declarar dentro de quiery los cambios a realizar, no agregamos y/o repetimos el mismo codigo */
+
+@media (max-width:768px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.25fr 2fr 0.1fr;
+        grid-template-areas: 
+                "cabeza     cabeza     "
+                "galeria    galeria     "
+                "pie         pie        ";
+        background: #dfaf79;
+    }
+
+    .tiktok{
+        background-color: #dd1818;
+    }
+}
+
+@media (max-width:480px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 2fr 0.1fr;
+        grid-template-areas: 
+                "cabeza     "
+                "galeria     "
+                "pie        ";
+        background: #bbaae9;
+    }
+    .barra{
+        flex-direction: column;
+    }
+    .tiktok{
+        background-color: #c9dd18;
+    }
+}
+
+/*
+@media(min-width:420px) and  (max-width:768px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 2fr 0.1fr;
+        grid-template-areas: 
+                "cabeza     "
+                "galeria     "
+                "pie        ";
+        background: #bbaae9;
+    }
+    .tiktok{
+        background-color: #dd1818;
+    }
+}
+*/
+
+/*Mobile
+De min a max: se trabaja con el inspeccionar desde 480px hacia delante. Ver 1h40min aproximadamente
+*/
+
+
+
+
+
+
+
