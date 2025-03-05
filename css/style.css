@@ -1,27 +1,27 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', cursive;
 }
 
-.carrusel h3 {
+.carrusel__h3 {
     color: #4f5f06;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #c5cb0e;
 }
 
-.carrusel p{
+.carrusel__p{
     color: #18045f;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #fcd80c;
 }
 
-.hermano h2{
+.galery__h2{
     color: #ff9913;
     font-style: italic;
 }
 
-.hermano {
+.galery {
     font-size: 0.7em;
     background-color: #f1ebcf;
     color: #947b0e;
@@ -34,39 +34,19 @@
     line-height: 1.5;
 }
 
-.hermano img{
+.galery__img{
     width: 25%;
     margin: 8px;
 }
 
-.hermana{
+/*Header de Index*/
+.cabeza {
     font-size: 2em;
+}
+
+.cabeza__titulo{
     color: #ce910d;
     text-align:center;
 }
 
-/* Main DE Servicio */
 
-.contenedor-flex{
-    background-color: #eceaec;
-    display: flex;
-    max-width: 1000px;
-    flex-flow: wrap;
-}
-
-.card{
-    border: 3px solid #c5cb0e;
-    background-color: #ffffff;
-    width: 300px;
-    height: 250px;
-    border-radius: 10px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.card img{
-    width: 80px;
-}

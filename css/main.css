@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/*
+
+Reset - margin, padding, tipografias, colores, tamaños de tipografia
+
+cabeza - header
+
+cuerpo - main
+
+pie - footer
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", cursive;
+}
+
+.carrusel {
+  font-family: "Arima";
+}
+.carrusel__h3 {
+  color: #4f5f06;
+  background-color: #c5cb0e;
+}
+.carrusel__p {
+  color: #18045f;
+  background-color: #fcd80c;
+}
+
+/*Header de Index*/
+.cabeza {
+  font-size: 2em;
+}
+.cabeza__titulo {
+  color: #ce910d;
+  text-align: center;
+}
+
+.galery {
+  font-size: 0.7em;
+  background-color: #f1ebcf;
+  color: #947b0e;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.galery__h2 {
+  color: #ff9913;
+  font-style: italic;
+}
+.galery__img {
+  width: 25%;
+  margin: 8px;
+}
+
+.card {
+  color: #6d2525;
+  background: #e2f029;
+}
+.card-text {
+  color: #b10be4;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,20 @@
+{
+  "name": "clinica_cristiana---sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/style.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikuru-Asahina/2da_entrega_clinica_cristiana.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mikuru-Asahina/2da_entrega_clinica_cristiana/issues"
+  },
+  "homepage": "https://github.com/Mikuru-Asahina/2da_entrega_clinica_cristiana#readme",
+  "description": ""
+}

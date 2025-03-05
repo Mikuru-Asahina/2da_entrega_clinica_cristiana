@@ -1,0 +1,16 @@
+// galeria de servicio 
+
+.galery{
+    &__h2{
+    color: #ff9913;
+    font-style: italic;
+    }
+}
+
+.card{
+    @include pat;
+    
+    &-text{
+        color: #b10be4;
+    }
+}

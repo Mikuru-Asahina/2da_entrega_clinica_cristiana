@@ -1,0 +1,26 @@
+//BS de index
+
+.carrusel{
+    font-family: $title-sec;
+
+    &__h3{
+        color: $h3;
+        background-color: $h31;
+
+    }
+
+    &__p{
+        color: $p1;
+        background-color: $p;
+    }
+}
+
+/*Header de Index*/
+.cabeza {
+    font-size: 2em;
+    
+    &__titulo{
+        color: #ce910d;
+        text-align:center;
+    }
+}
