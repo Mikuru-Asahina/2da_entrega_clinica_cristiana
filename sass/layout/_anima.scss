@@ -1,0 +1,110 @@
+/*logo de la web*/
+.rotate-scale-down-diag-2 {
+	-webkit-animation: rotate-scale-down-diag-2 0.7s linear both;
+	        animation: rotate-scale-down-diag-2 0.7s linear both;
+}
+
+@-webkit-keyframes rotate-scale-down-diag-2 {
+0% {
+-webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+        transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+}
+50% {
+-webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+        transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+}
+100% {
+-webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+        transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+}
+}
+@keyframes rotate-scale-down-diag-2 {
+0% {
+-webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+        transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+}
+50% {
+-webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+        transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+}
+100% {
+-webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+        transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+}
+}
+
+/*texto de galería*/
+.focus-in-contract-bck {
+	-webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-contract-bck {
+0% {
+letter-spacing: 1em;
+-webkit-transform: translateZ(300px);
+        transform: translateZ(300px);
+-webkit-filter: blur(12px);
+        filter: blur(12px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translateZ(12px);
+        transform: translateZ(12px);
+-webkit-filter: blur(0);
+        filter: blur(0);
+opacity: 1;
+}
+}
+@keyframes focus-in-contract-bck {
+0% {
+letter-spacing: 1em;
+-webkit-transform: translateZ(300px);
+        transform: translateZ(300px);
+-webkit-filter: blur(12px);
+        filter: blur(12px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translateZ(12px);
+        transform: translateZ(12px);
+-webkit-filter: blur(0);
+        filter: blur(0);
+opacity: 1;
+}
+}
+
+/*Comentarios*/
+.pulsate-fwd {
+	-webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
+	        animation: pulsate-fwd 0.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+0% {
+-webkit-transform: scale(1);
+        transform: scale(1);
+}
+50% {
+-webkit-transform: scale(1.1);
+        transform: scale(1.1);
+}
+100% {
+-webkit-transform: scale(1);
+        transform: scale(1);
+}
+}
+@keyframes pulsate-fwd {
+0% {
+-webkit-transform: scale(1);
+        transform: scale(1);
+}
+50% {
+-webkit-transform: scale(1.1);
+        transform: scale(1.1);
+}
+100% {
+-webkit-transform: scale(1);
+        transform: scale(1);
+}
+}

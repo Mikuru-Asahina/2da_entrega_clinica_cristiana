@@ -13,6 +13,7 @@ pie - footer
 */
 
 //reset
+@import "./config/mixin";
 @import "./config/tipo";
 @import "./config/color";
 @import "./config/reset";
@@ -20,7 +21,5 @@ pie - footer
 //layout
 @import './layout/menu';
 @import "./layout/galery";
-
-
-
-
+@import "./layout/pie";
+@import "./layout/anima";

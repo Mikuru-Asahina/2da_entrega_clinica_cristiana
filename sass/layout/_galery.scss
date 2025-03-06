@@ -1,16 +1,23 @@
 // galeria de servicio 
 
 .galery{
+    text-align: center;
+    background-color: #57eb577c;
+    padding: 10px;
+    
     &__h2{
-    color: #ff9913;
-    font-style: italic;
+    @include pat;
+    padding: 10px;
     }
 }
 
 .card{
-    @include pat;
+    color: #0a7ee4;
+    background-image: none;
+    background: none;
+    image-orientation: center;
     
     &-text{
-        color: #b10be4;
+        color: #2a0267a0;
     }
 }

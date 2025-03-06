@@ -1,0 +1,21 @@
+/*Colores para los botones*/
+
+$celeste: #29f6f2;
+$lila: #f1e8e8;
+$negro: #383434;
+$azul: #1c1cdb;
+$rojo: #da1c1c;
+
+$pie: (
+    twitter: $celeste,
+    instagram: $lila,
+    tiktok: $negro,
+    facebook: $azul,
+    youtube: $rojo,
+);
+
+@each $arcoiris, $colors in $pie{
+    .paleta-#{$arcoiris}{
+        background-color: $colors;
+    }
+}
